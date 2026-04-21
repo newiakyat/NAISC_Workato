@@ -1,0 +1,21 @@
+# SLA RAG Pipeline — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# PDF → Markdown conversion (primary)
+pymupdf4llm>=0.0.12
+
+# PyMuPDF core (used directly by pymupdf4llm; also the fallback extractor)
+PyMuPDF>=1.24.0
+
+# LangChain text splitters (MarkdownHeaderTextSplitter + RecursiveCharacterTextSplitter)
+langchain-text-splitters>=0.2.4
+
+# Sentence-transformer embeddings (runs locally, no API key needed)
+sentence-transformers>=3.0.0
+
+# Vector database with local persistence
+chromadb>=0.5.0
+
+# Transitive deps that may need pinning in restricted envs
+numpy>=1.26.0
+torch>=2.2.0          # sentence-transformers backend (CPU-only is fine)

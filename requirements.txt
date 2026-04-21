@@ -15,7 +15,7 @@ sentence-transformers>=3.0.0
 
 # Vector database with local persistence
 chromadb>=0.5.0
-
+flask
 gunicorn
 # Transitive deps that may need pinning in restricted envs
 numpy>=1.26.0

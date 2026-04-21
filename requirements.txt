@@ -16,6 +16,7 @@ sentence-transformers>=3.0.0
 # Vector database with local persistence
 chromadb>=0.5.0
 
+gunicorn
 # Transitive deps that may need pinning in restricted envs
 numpy>=1.26.0
 torch>=2.2.0          # sentence-transformers backend (CPU-only is fine)
